@@ -18,6 +18,7 @@
 		27C2F2FC1EA2AAA3005A0792 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */; };
 		86900BA762D956E8D56346E7 /* Pods_ShoppingBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */; };
 		FDE206831EA2A43E005DA4A5 /* UploadImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE206821EA2A43E005DA4A5 /* UploadImages.swift */; };
+		FDE206851EA2C9CC005DA4A5 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE206841EA2C9CC005DA4A5 /* RatingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B3C3483D86E1124F313924BE /* Pods-ShoppingBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingBuddy/Pods-ShoppingBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE206821EA2A43E005DA4A5 /* UploadImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImages.swift; sourceTree = "<group>"; };
+		FDE206841EA2C9CC005DA4A5 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				27C2F2E71EA29673005A0792 /* ShoppingBuddy.xcdatamodeld */,
 				27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */,
 				FDE206821EA2A43E005DA4A5 /* UploadImages.swift */,
+				FDE206841EA2C9CC005DA4A5 /* RatingViewController.swift */,
 				27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */,
 				27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */,
 			);
@@ -203,7 +206,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C2471653283F59686D776565 /* [CP] Copy Pods Resources */ = {
@@ -234,6 +237,7 @@
 				27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */,
 				27C2F2FA1EA2A892005A0792 /* RegistrationViewController.swift in Sources */,
 				27C2F2E11EA29673005A0792 /* AppDelegate.swift in Sources */,
+				FDE206851EA2C9CC005DA4A5 /* RatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
