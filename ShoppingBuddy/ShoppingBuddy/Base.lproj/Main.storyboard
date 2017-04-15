@@ -237,7 +237,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVa-nD-riX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVa-nD-riX">
                                 <rect key="frame" x="87" y="106" width="215" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -271,21 +271,89 @@
                                 <rect key="frame" x="162" y="545" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submit:" destination="bxg-av-UNO" eventType="touchUpInside" id="l1V-sx-16k"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DFZ-Hj-JLS">
+                                <rect key="frame" x="184" y="45" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="Rating" destination="OKb-Hj-7zC" id="Keb-PX-YiM"/>
+                        <outlet property="comment" destination="MDA-eD-K6s" id="kGy-BL-GCW"/>
+                        <outlet property="imageView" destination="uVa-nD-riX" id="DRD-M8-udx"/>
                         <outlet property="rating" destination="OKb-Hj-7zC" id="FDh-ZU-Ohy"/>
+                        <outlet property="spinner" destination="DFZ-Hj-JLS" id="rhA-0S-1q0"/>
+                        <segue destination="Kq2-QM-bqu" kind="show" identifier="results" id="Nx6-Tn-Hf9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9YO-nY-xjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3070" y="139"/>
+            <point key="canvasLocation" x="3220" y="139"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="XIg-f1-dfU">
+            <objects>
+                <viewController id="Kq2-QM-bqu" customClass="ResultsViewController" customModule="ShoppingBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7HR-Gj-CTJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hNz-vb-ZBK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4dt-0W-tYy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ios-B2-GSH" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="125" y="389" width="125" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is how your buddy rated you!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBi-mL-hwF">
+                                <rect key="frame" x="58" y="420" width="258" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4e-12-ROH">
+                                <rect key="frame" x="137" y="605" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back home"/>
+                                <connections>
+                                    <action selector="submit:" destination="bxg-av-UNO" eventType="touchUpInside" id="JyP-GQ-mre"/>
+                                    <segue destination="e3Y-9e-QmS" kind="show" id="dlv-FD-exs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbc-08-I9t">
+                                <rect key="frame" x="16" y="521" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BOc-qt-1cH">
+                                <rect key="frame" x="80" y="142" width="215" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="comments" destination="zbc-08-I9t" id="JH5-CX-kSh"/>
+                        <outlet property="imageView" destination="BOc-qt-1cH" id="A8i-jw-Wfm"/>
+                        <outlet property="stars" destination="Ios-B2-GSH" id="S73-J9-XT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Liw-7A-9PP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4024.8000000000002" y="147.97601199400302"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PKc-iP-ivh"/>
+        <segue reference="dlv-FD-exs"/>
     </inferredMetricsTieBreakers>
 </document>
