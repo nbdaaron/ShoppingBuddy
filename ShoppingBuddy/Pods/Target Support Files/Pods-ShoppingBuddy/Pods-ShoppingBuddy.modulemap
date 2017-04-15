@@ -1,0 +1,6 @@
+framework module Pods_ShoppingBuddy {
+  umbrella header "Pods-ShoppingBuddy-umbrella.h"
+
+  export *
+  module * { export * }
+}
