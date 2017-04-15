@@ -14,6 +14,8 @@
 		27C2F2EB1EA29673005A0792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C2F2EA1EA29673005A0792 /* Assets.xcassets */; };
 		27C2F2EE1EA29673005A0792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C2F2EC1EA29673005A0792 /* LaunchScreen.storyboard */; };
 		27C2F2F61EA29C17005A0792 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */; };
+		27C2F2FA1EA2A892005A0792 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */; };
+		27C2F2FC1EA2AAA3005A0792 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */; };
 		86900BA762D956E8D56346E7 /* Pods_ShoppingBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		27C2F2ED1EA29673005A0792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27C2F2EF1EA29673005A0792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B3C3483D86E1124F313924BE /* Pods-ShoppingBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingBuddy/Pods-ShoppingBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				27C2F2EF1EA29673005A0792 /* Info.plist */,
 				27C2F2E71EA29673005A0792 /* ShoppingBuddy.xcdatamodeld */,
 				27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */,
+				27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */,
+				27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */,
 			);
 			path = ShoppingBuddy;
 			sourceTree = "<group>";
@@ -219,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C2F2FC1EA2AAA3005A0792 /* HomeViewController.swift in Sources */,
 				27C2F2E91EA29673005A0792 /* ShoppingBuddy.xcdatamodeld in Sources */,
 				27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */,
+				27C2F2FA1EA2A892005A0792 /* RegistrationViewController.swift in Sources */,
 				27C2F2E11EA29673005A0792 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

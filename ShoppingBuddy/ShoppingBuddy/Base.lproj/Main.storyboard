@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,11 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rk0-h9-vCX">
-                                <rect key="frame" x="53" y="455" width="269" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="loging"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shopping Buddy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKg-KL-hWh">
                                 <rect key="frame" x="124" y="88" width="127" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -33,18 +28,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yud-hd-gLj" customClass="GIDSignInButton">
+                                <rect key="frame" x="67" y="431" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="hitLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QF0-tA-AfK"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="1Wi-Xp-Lxm" kind="show" identifier="startRegistration" id="wdx-Vl-4NH"/>
+                        <segue destination="e3Y-9e-QmS" kind="show" identifier="startHome" id="PKc-iP-ivh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="jd6-tb-Cis">
             <objects>
-                <viewController id="1Wi-Xp-Lxm" sceneMemberID="viewController">
+                <viewController id="1Wi-Xp-Lxm" customClass="RegistrationViewController" customModule="ShoppingBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fj8-hh-FSy"/>
                         <viewControllerLayoutGuide type="bottom" id="s03-VT-WtY"/>
@@ -107,21 +114,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="e3Y-9e-QmS" kind="show" id="N8M-38-4vA"/>
+                                    <action selector="register:" destination="1Wi-Xp-Lxm" eventType="touchUpInside" id="3J9-np-VLA"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="age" destination="m7I-7c-kEy" id="y5I-jb-uhp"/>
+                        <outlet property="gender" destination="GuG-at-4rH" id="kYt-CL-BKh"/>
+                        <outlet property="name" destination="tDQ-uP-XQv" id="5Mj-Ac-7O7"/>
+                        <segue destination="e3Y-9e-QmS" kind="show" identifier="registerToHome" id="4DY-P0-yuE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN3-kx-Tgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="yTD-Hu-Jbj">
             <objects>
-                <viewController id="e3Y-9e-QmS" sceneMemberID="viewController">
+                <viewController id="e3Y-9e-QmS" customClass="HomeViewController" customModule="ShoppingBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8h2-as-E2G"/>
                         <viewControllerLayoutGuide type="bottom" id="PqW-l9-1eP"/>
@@ -135,12 +148,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find Me A Shopping Buddy!"/>
                                 <connections>
-                                    <segue destination="rY8-tv-0hW" kind="show" id="bFp-RF-hpJ"/>
+                                    <action selector="find:" destination="e3Y-9e-QmS" eventType="touchUpInside" id="JpE-AC-PuN"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-Wz-uPs">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="spinner" destination="jiO-Wz-uPs" id="wrX-gI-zWE"/>
+                        <segue destination="rY8-tv-0hW" kind="show" identifier="buddyFound" id="LhX-A4-wMX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHt-ym-bVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +186,7 @@
             <point key="canvasLocation" x="2302" y="148"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="loging" width="275" height="80"/>
-    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PKc-iP-ivh"/>
+    </inferredMetricsTieBreakers>
 </document>
