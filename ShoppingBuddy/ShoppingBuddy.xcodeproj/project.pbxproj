@@ -15,6 +15,7 @@
 		27C2F2EE1EA29673005A0792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C2F2EC1EA29673005A0792 /* LaunchScreen.storyboard */; };
 		27C2F2F61EA29C17005A0792 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */; };
 		86900BA762D956E8D56346E7 /* Pods_ShoppingBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */; };
+		FDE206831EA2A43E005DA4A5 /* UploadImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE206821EA2A43E005DA4A5 /* UploadImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B3C3483D86E1124F313924BE /* Pods-ShoppingBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingBuddy/Pods-ShoppingBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE206821EA2A43E005DA4A5 /* UploadImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				27C2F2EF1EA29673005A0792 /* Info.plist */,
 				27C2F2E71EA29673005A0792 /* ShoppingBuddy.xcdatamodeld */,
 				27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */,
+				FDE206821EA2A43E005DA4A5 /* UploadImages.swift */,
 			);
 			path = ShoppingBuddy;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE206831EA2A43E005DA4A5 /* UploadImages.swift in Sources */,
 				27C2F2E91EA29673005A0792 /* ShoppingBuddy.xcdatamodeld in Sources */,
 				27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */,
 				27C2F2E11EA29673005A0792 /* AppDelegate.swift in Sources */,
