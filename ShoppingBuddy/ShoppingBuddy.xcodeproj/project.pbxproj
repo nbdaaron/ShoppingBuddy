@@ -97,6 +97,8 @@
 				27C2F2E71EA29673005A0792 /* ShoppingBuddy.xcdatamodeld */,
 				27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */,
 				FDE206821EA2A43E005DA4A5 /* UploadImages.swift */,
+				27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */,
+				27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */,
 			);
 			path = ShoppingBuddy;
 			sourceTree = "<group>";
@@ -227,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE206831EA2A43E005DA4A5 /* UploadImages.swift in Sources */,
+				27C2F2FC1EA2AAA3005A0792 /* HomeViewController.swift in Sources */,
 				27C2F2E91EA29673005A0792 /* ShoppingBuddy.xcdatamodeld in Sources */,
 				27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */,
 				27C2F2FA1EA2A892005A0792 /* RegistrationViewController.swift in Sources */,
