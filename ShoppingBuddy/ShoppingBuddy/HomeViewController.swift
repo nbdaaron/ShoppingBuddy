@@ -42,6 +42,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         user = FIRAuth.auth()?.currentUser
+        spinner.hidesWhenStopped = true
         // Do any additional setup after loading the view.
     }
 
