@@ -387,6 +387,7 @@
 				27C2F2F41EA29673005A0792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
