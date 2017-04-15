@@ -64,7 +64,7 @@ class UploadImages: UIViewController,
                 let value = snapshot.value as? String
                 if value != nil {
                     users.child(uid).child("partner").removeAllObservers()
-                    //self.performSegue(withIdentifier: "ratePage", sender: nil)
+                    self.performSegue(withIdentifier: "ratePage", sender: nil)
                     print("Both images found.")
                     self.spinner.stopAnimating()
                     FIRDatabase.database().reference().child("queue").child(uid).removeValue()

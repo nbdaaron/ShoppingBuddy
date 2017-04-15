@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278136E81EA2D14C0024F42F /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278136E71EA2D14C0024F42F /* RatingViewController.swift */; };
 		27C2F2E11EA29673005A0792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2E01EA29673005A0792 /* AppDelegate.swift */; };
 		27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2E21EA29673005A0792 /* ViewController.swift */; };
 		27C2F2E61EA29673005A0792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C2F2E41EA29673005A0792 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		065C8DA87A4A26689CF8F3EC /* Pods-ShoppingBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingBuddy/Pods-ShoppingBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		278136E71EA2D14C0024F42F /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		27C2F2DD1EA29673005A0792 /* ShoppingBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C2F2E01EA29673005A0792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C2F2E21EA29673005A0792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				FDE206821EA2A43E005DA4A5 /* UploadImages.swift */,
 				27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */,
 				27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */,
+				278136E71EA2D14C0024F42F /* RatingViewController.swift */,
 			);
 			path = ShoppingBuddy;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */,
 				27C2F2FA1EA2A892005A0792 /* RegistrationViewController.swift in Sources */,
 				27C2F2E11EA29673005A0792 /* AppDelegate.swift in Sources */,
+				278136E81EA2D14C0024F42F /* RatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
