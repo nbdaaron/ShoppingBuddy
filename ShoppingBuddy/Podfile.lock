@@ -53,7 +53,7 @@ PODS:
     - GTMSessionFetcher/Core (= 1.1.9)
 
 DEPENDENCIES:
-  - Cosmos
+  - Cosmos (~> 9.0)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -74,6 +74,6 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
 
-PODFILE CHECKSUM: 8878a6b55f906b0981d0a78d458f2b6be88b25ba
+PODFILE CHECKSUM: f0bd757230a22e7a086e8f5d53a746bd998b10f7
 
 COCOAPODS: 1.2.0

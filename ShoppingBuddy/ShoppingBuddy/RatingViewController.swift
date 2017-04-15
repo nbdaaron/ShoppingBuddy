@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import Cosmos
 
 class RatingViewController: UIViewController {
     
-    @IBOutlet weak var Rating: CosmosView!
-    
+    @IBOutlet weak var rating: CosmosView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     

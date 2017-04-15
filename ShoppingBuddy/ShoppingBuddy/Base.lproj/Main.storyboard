@@ -277,6 +277,7 @@
                     </view>
                     <connections>
                         <outlet property="Rating" destination="OKb-Hj-7zC" id="Keb-PX-YiM"/>
+                        <outlet property="rating" destination="OKb-Hj-7zC" id="FDh-ZU-Ohy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9YO-nY-xjd" userLabel="First Responder" sceneMemberID="firstResponder"/>

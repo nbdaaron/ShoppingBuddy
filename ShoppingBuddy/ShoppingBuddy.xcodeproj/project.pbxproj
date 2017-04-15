@@ -364,7 +364,7 @@
 				DEVELOPMENT_TEAM = K2XB9K6AET;
 				INFOPLIST_FILE = ShoppingBuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.shoppingbuddy.ShoppingBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -379,7 +379,7 @@
 				DEVELOPMENT_TEAM = K2XB9K6AET;
 				INFOPLIST_FILE = ShoppingBuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.shoppingbuddy.ShoppingBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
