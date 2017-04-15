@@ -7,24 +7,41 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
+    
+    var user: FIRUser!
 
     @IBAction func find(_ sender: Any) {
         if spinner.isAnimating {
             spinner.stopAnimating()
-            self.performSegue(withIdentifier: "buddyFound", sender: nil)
+            FIRDatabase.database().reference().child("queue").child(user.uid).removeValue()
             
         } else {
             spinner.startAnimating()
-            
+            FIRDatabase.database().reference().child("queue").child(user.uid).setValue("1")
+            FIRDatabase.database().reference().child("queue").observe(FIRDataEventType.value, with: { (snapshot) in
+                let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+                postDict.forEach({ item in
+                    let (key, value) = item
+                    if key == self.user.uid {
+                        return
+                    } else if value as! String == "1" || value as! String == self.user.uid {
+                        FIRDatabase.database().reference().child("users").child(self.user.uid).child("partner").setValue(key)
+                        FIRDatabase.database().reference().child("queue").child(self.user.uid).setValue(key)
+                        FIRDatabase.database().reference().child("queue").removeAllObservers()
+                        self.performSegue(withIdentifier: "buddyFound", sender: nil)
+                    }
+                })
+            })
         }
         
     }
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        user = FIRAuth.auth()?.currentUser
         // Do any additional setup after loading the view.
     }
 
