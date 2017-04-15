@@ -13,6 +13,8 @@ class UploadImages: UIViewController,
 
     @IBOutlet weak var uploadedImage: UIImageView!
     
+    @IBOutlet weak var clickToUpload: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -24,32 +26,38 @@ class UploadImages: UIViewController,
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    //MARK: - Delegates
-    func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : AnyObject])
-    {
-        
-        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
-        //uploadedImage.contentMode = .scaleAspectFit //3
-        uploadedImage.image = chosenImage //4
-        dismiss(animated:true, completion: nil)
-        
-    }
+
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         
-        
+        picker.dismiss(animated: true)
         
     }
     
     
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+            // Use editedImage Here
+        } else if let originalImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            // Use originalImage Here
+            uploadedImage.image = originalImage
+            clickToUpload.setTitle("", for: .normal)
+            
+            
+        }
+        picker.dismiss(animated: true)
+    }
+
+    
+    
     @IBAction func openGallery(_ sender: Any) {
-        let picker = UIImagePickerController()
-        picker.allowsEditing = false
-        picker.sourceType = .photoLibrary
-        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
-        present(picker, animated: true, completion: nil)
+        let imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        imagePicker.delegate = self
+        present(imagePicker, animated: true, completion: nil)
     }
 
     /*
