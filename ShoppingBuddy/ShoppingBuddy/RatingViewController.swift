@@ -40,7 +40,7 @@ class RatingViewController: UIViewController, UITextFieldDelegate {
             
             users.child(partnerid).child("rating").observe(FIRDataEventType.value, with: { (snapshot) in
                 let value = snapshot.value as? Double
-                print("Value: \(value)")
+                //print("Value: \(value)")
                 if value != nil {
                     users.child(partnerid).child("rating").removeAllObservers()
                     self.performSegue(withIdentifier: "results", sender: nil)

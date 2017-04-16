@@ -105,9 +105,7 @@ class UploadImages: UIViewController,
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
-            // Use editedImage Here
-        } else if let originalImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        if let originalImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             // Use originalImage Here
             uploadedImage.image = originalImage
             clickToUpload.setTitle("", for: .normal)
