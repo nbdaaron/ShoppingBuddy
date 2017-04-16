@@ -11,6 +11,8 @@ import Firebase
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var hand: UIImageView!
+    //@IBOutlet weak var flippedHand: UIImageView! //to 58
     var user: FIRUser!
 
     @IBAction func find(_ sender: Any) {
@@ -31,8 +33,16 @@ class HomeViewController: UIViewController {
                         FIRDatabase.database().reference().child("users").child(self.user.uid).child("partner").setValue(key)
                         FIRDatabase.database().reference().child("queue").child(self.user.uid).setValue(key)
                         FIRDatabase.database().reference().child("queue").removeAllObservers()
-                        self.performSegue(withIdentifier: "buddyFound", sender: nil)
-                    }
+                        UIView.animate(withDuration: 1.5, delay: 0, options: .curveLinear, animations: {
+                            self.hand.center.x -= 80
+                        }, completion: { (success) in
+                            
+                        })
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                            self.performSegue(withIdentifier: "buddyFound", sender: nil)
+                        })
+                        
+                                            }
                 })
             })
         }

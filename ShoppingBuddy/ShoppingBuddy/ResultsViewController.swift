@@ -38,6 +38,7 @@ class ResultsViewController: UIViewController {
                 let rate = val?["rating"] as? Double
                 let comment = val?["comment"] as? String
                 
+                print(comment);
                 self.comments.text = comment!
                 self.stars.rating = rate!
                 
