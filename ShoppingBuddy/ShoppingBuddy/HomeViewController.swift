@@ -8,12 +8,26 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
 class HomeViewController: UIViewController {
+    
     
     @IBOutlet weak var hand: UIImageView!
     //@IBOutlet weak var flippedHand: UIImageView! //to 58
     var user: FIRUser!
+    
+    @IBAction func signout(_ sender: Any) {
+        
+        do {
+        try FIRAuth.auth()?.signOut()
+        } catch {
+            print("error")
+        }
+        GIDSignIn.sharedInstance().signOut()
+        performSegue(withIdentifier: "signout", sender: nil)
+    
+    }
 
     @IBAction func find(_ sender: Any) {
         if spinner.isAnimating {

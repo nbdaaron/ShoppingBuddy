@@ -161,6 +161,14 @@
                                 <rect key="frame" x="248" y="215" width="136" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOP-DH-vdK">
+                                <rect key="frame" x="182" y="478" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="signout"/>
+                                <connections>
+                                    <action selector="signout:" destination="e3Y-9e-QmS" eventType="touchUpInside" id="dSS-cO-6Ne"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u8-pQ-gli">
                                 <rect key="frame" x="33" y="76" width="349" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -179,6 +187,7 @@
                         <outlet property="hand" destination="Y3u-su-RRV" id="fND-t8-SRi"/>
                         <outlet property="spinner" destination="jiO-Wz-uPs" id="wrX-gI-zWE"/>
                         <segue destination="rY8-tv-0hW" kind="show" identifier="buddyFound" id="LhX-A4-wMX"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="signout" id="je1-w0-KXZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHt-ym-bVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -368,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Liw-7A-9PP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4024.8000000000002" y="147.97601199400302"/>
+            <point key="canvasLocation" x="4039" y="139"/>
         </scene>
     </scenes>
     <resources>
@@ -377,6 +386,6 @@
         <image name="shoppingbuddy" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PKc-iP-ivh"/>
+        <segue reference="dlv-FD-exs"/>
     </inferredMetricsTieBreakers>
 </document>
