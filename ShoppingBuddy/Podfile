@@ -9,5 +9,7 @@ target 'ShoppingBuddy' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'GoogleSignIn'
+  pod 'Cosmos', '~> 9.0'
 end

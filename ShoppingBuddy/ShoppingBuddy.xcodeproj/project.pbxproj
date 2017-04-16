@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278136E81EA2D14C0024F42F /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278136E71EA2D14C0024F42F /* RatingViewController.swift */; };
+		278136EA1EA2E32E0024F42F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278136E91EA2E32E0024F42F /* ResultsViewController.swift */; };
 		27C2F2E11EA29673005A0792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2E01EA29673005A0792 /* AppDelegate.swift */; };
 		27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2E21EA29673005A0792 /* ViewController.swift */; };
 		27C2F2E61EA29673005A0792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C2F2E41EA29673005A0792 /* Main.storyboard */; };
@@ -17,10 +19,13 @@
 		27C2F2FA1EA2A892005A0792 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */; };
 		27C2F2FC1EA2AAA3005A0792 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */; };
 		86900BA762D956E8D56346E7 /* Pods_ShoppingBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */; };
+		FDE206831EA2A43E005DA4A5 /* UploadImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE206821EA2A43E005DA4A5 /* UploadImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		065C8DA87A4A26689CF8F3EC /* Pods-ShoppingBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingBuddy/Pods-ShoppingBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		278136E71EA2D14C0024F42F /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		278136E91EA2E32E0024F42F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		27C2F2DD1EA29673005A0792 /* ShoppingBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C2F2E01EA29673005A0792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27C2F2E21EA29673005A0792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B3C3483D86E1124F313924BE /* Pods-ShoppingBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoppingBuddy/Pods-ShoppingBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		E5F5EC30DC8B8B3AF08F76CA /* Pods_ShoppingBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE206821EA2A43E005DA4A5 /* UploadImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 				27C2F2EF1EA29673005A0792 /* Info.plist */,
 				27C2F2E71EA29673005A0792 /* ShoppingBuddy.xcdatamodeld */,
 				27C2F2F51EA29C17005A0792 /* GoogleService-Info.plist */,
+				FDE206821EA2A43E005DA4A5 /* UploadImages.swift */,
 				27C2F2F91EA2A892005A0792 /* RegistrationViewController.swift */,
 				27C2F2FB1EA2AAA3005A0792 /* HomeViewController.swift */,
+				278136E71EA2D14C0024F42F /* RatingViewController.swift */,
+				278136E91EA2E32E0024F42F /* ResultsViewController.swift */,
 			);
 			path = ShoppingBuddy;
 			sourceTree = "<group>";
@@ -225,11 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE206831EA2A43E005DA4A5 /* UploadImages.swift in Sources */,
 				27C2F2FC1EA2AAA3005A0792 /* HomeViewController.swift in Sources */,
 				27C2F2E91EA29673005A0792 /* ShoppingBuddy.xcdatamodeld in Sources */,
 				27C2F2E31EA29673005A0792 /* ViewController.swift in Sources */,
 				27C2F2FA1EA2A892005A0792 /* RegistrationViewController.swift in Sources */,
 				27C2F2E11EA29673005A0792 /* AppDelegate.swift in Sources */,
+				278136E81EA2D14C0024F42F /* RatingViewController.swift in Sources */,
+				278136EA1EA2E32E0024F42F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +367,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K2XB9K6AET;
 				INFOPLIST_FILE = ShoppingBuddy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.shoppingbuddy.ShoppingBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -369,7 +382,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K2XB9K6AET;
 				INFOPLIST_FILE = ShoppingBuddy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.shoppingbuddy.ShoppingBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
